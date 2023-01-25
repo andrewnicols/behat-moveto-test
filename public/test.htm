@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.hide {
+  padding-top: 10px;
+  display: none;
+  color: #black;
+}
+
+.hoverme {
+  width: 100px;
+  height: 20px;
+  border: 1px solid #CCCCCC;
+  padding: 40px;
+  border-radius: 11px;
+}
+
+.hoverme:hover + .hide {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="hoverme">Hover over me.</div>
+<div class="hide">Hello world.</div>
+
+</body>
+</html>

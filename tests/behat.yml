@@ -1,0 +1,18 @@
+# behat.yml
+default:
+  autoload: [ '%paths.base%/contexts' ]
+  suites:
+    core_features:
+      paths: [ '%paths.base%/features' ]
+      contexts: [ FeatureContext ]
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'http://web:80'
+      javascript_session: selenium2
+      browser_name: chrome
+      selenium2:
+        browser: chrome
+        capabilities:
+          browserName: "chrome"
+          browser: "chrome"
+          marionette: false
